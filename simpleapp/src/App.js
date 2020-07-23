@@ -1,10 +1,13 @@
 import React from "react";
-import Pay from "./view/pay/pay.js";
+
+import IndexRouter from "./router/IndexRouter";
 function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <Pay></Pay>
+      <header className="App-container">
+        <IndexRouter></IndexRouter>
+      </header>
     </div>
   );
 }

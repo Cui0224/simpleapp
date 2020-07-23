@@ -34,6 +34,7 @@ ul {
 }
 .choose_seat_content {
   flex: 1;
+  display: flex;
   overflow: hidden;
 }
 .choose_seat_footer {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import css from "../../css/pay/pay.module.css";
+import css from "../css/pay/pay.module.css";
 export default class pay extends Component {
   constructor(props) {
     super(props);
