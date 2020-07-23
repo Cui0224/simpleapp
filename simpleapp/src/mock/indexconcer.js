@@ -12,10 +12,12 @@ module.exports = () => {
         }],
         'exhibition|7': [{
             'img': '/01.jpg',
+            'money': '￥50',
             'text': "聚橙制作|百老汇爱情音乐轻松",
         }],
         'child|7': [{
             'img': '/01.jpg',
+            'money': '￥50',
             'text': "聚橙制作|百老汇爱情音乐轻松",
         }],
         'singsongstop': [{
@@ -35,6 +37,15 @@ module.exports = () => {
             'city': '北京',
             'theatername': '中华世纪坛',
             'img': '/01.jpg',
+        }],
+        'recommend|30': [{
+            'id|+1': 1,
+            'img': '/01.jpg',
+            'mainhold': true,
+            'text': "聚橙制作|百老汇爱情音乐轻松",
+            'date': "2020.12.23 - 12.26",
+            'money': "￥100",
+            'city': "广州",
         }],
     })
     return data
