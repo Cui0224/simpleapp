@@ -1,0 +1,14 @@
+.hot .title{display: flex;align-items: center;justify-content: space-between;padding: 15px 15px;}
+.hot .title_l h2{font-size: 20px;font-weight: bold;}
+/* 热门演出 */
+#s_container{padding:0 15px;}
+#s_container img{width: 76px;height: 104px;}
+#s_container p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow:hidden;font-size: 12px;line-height: 16px;color: #232323;}
+/* 演唱会 */
+#sw_container{padding:0 15px;}
+#sw_container img{width: 76px;height: 104px;}
+#sw_container p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow:hidden;font-size: 12px;line-height: 16px;color: #232323;}
+/* 展览休闲 */
+#swi_container{padding:0 15px;}
+#swi_container img{width: 76px;height: 104px;}
+#swi_container p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow:hidden;font-size: 12px;line-height: 16px;color: #232323;}
