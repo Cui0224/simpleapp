@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, NavLink, Redirect, Switch } from "react-router-dom";
-import HomeBottomCss from "../css/wyb/HomeBottom.module.css";
-import "../css/wyb/iconfont/iconfont.css";
+import HomeBottomCss from "../../css/wyb/HomeBottom.module.css";
+import "../../css/wyb/iconfont/iconfont.css";
 import { withRouter } from "react-router-dom";
 
  class HomeBottom extends Component {

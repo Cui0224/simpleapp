@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import HomeIndexCss from "../../css/wyb/HomeIndex.module.css"
-import Swiper from "../../component/Swiper"
+import Swiper from "../../component/wyb/Swiper"
+import Typelist from "../../component/wyb/Tpyelist"
 export default class Index extends Component {
     render() {
         return (
@@ -8,6 +9,9 @@ export default class Index extends Component {
                 <div className={HomeIndexCss.swiper}>
                     <Swiper/>
                 </div>
+                
+                <Typelist/>
+                
             </div>
         )
     }

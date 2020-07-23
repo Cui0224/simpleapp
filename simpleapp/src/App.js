@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./AppCss.css"
 import IndexRouter from "./router/IndexRouter"
 function App() {
   return (
