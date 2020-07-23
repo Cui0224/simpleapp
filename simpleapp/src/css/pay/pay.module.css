@@ -1,0 +1,51 @@
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.disable,
+.chooseable,
+.preselection {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.chooseable {
+  background: green;
+}
+.disable {
+  background: gray;
+}
+.way {
+  display: inline-block;
+  width: 30px;
+}
+.preselection {
+  background: blue;
+}
+.choose_seat_header {
+  background-color: red;
+  flex: 0.1;
+}
+.choose_seat_content {
+  flex: 1;
+  overflow: hidden;
+}
+.choose_seat_footer {
+  flex: 0.1;
+  background-color: red;
+}
+.choose_seat_wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
