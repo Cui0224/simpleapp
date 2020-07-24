@@ -5,47 +5,139 @@ ul {
   padding: 0;
   margin: 0;
 }
+.choose_seat_wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ccc;
+}
+.choose_seat_container {
+  flex: 1;
+  overflow: scroll;
+}
+.choose_seat_view {
+  /* transform: scale(0.5);
+  transform-origin: 0 0; */
+}
+.choose_seat_view li {
+  margin: 50px 0;
+}
+.choose_seat_view p {
+  white-space: nowrap;
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
 .disable,
 .chooseable,
 .preselection {
-  display: inline-block;
+  /* display: inline-block;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 50%; */
+  font-weight: bold;
   margin: 0 5px;
   cursor: pointer;
 }
 .chooseable {
-  background: green;
+  color: green;
 }
 .disable {
-  background: gray;
+  color: gray;
+}
+.preselection {
+  color: blue;
 }
 .way {
   display: inline-block;
   width: 30px;
 }
-.preselection {
-  background: blue;
-}
 .choose_seat_header {
-  background-color: red;
+  background-color: white;
   flex: 0.1;
-}
-.choose_seat_content {
-  flex: 1;
   display: flex;
-  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 .choose_seat_footer {
   flex: 0.1;
-  background-color: red;
+  background-color: white;
+  position: relative;
 }
-.choose_seat_wrap {
+/* .choose_seat_footer p:nth-of-type(1) { */
+.bt {
+  float: left;
+  margin-top: 15px;
+}
+.bt button {
+  background: white !important;
+  border: none !important;
+  box-shadow: none;
+}
+.bt span {
+  color: gray;
+  background: white;
+  font-size: 16px;
+}
+.choose_seat_footer p:nth-of-type(1) {
+  float: right;
+  color: white;
+  font-size: 20px;
+  background: #ff7c54;
+  margin: 6px 5px 0 10px;
+  padding: 8px 15px;
+  border-radius: 30px;
+}
+.choose_seat_footer p:nth-of-type(2) {
+  margin-top: 15px;
+  float: right;
+  color: #ff7c54;
+  font-size: 20px;
+}
+.seatDetail {
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  top: -88vw;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-indent: 2em;
+  overflow: scroll;
+}
+.seatDetail li h1 {
+  color: black;
+}
+.seatDetail li {
+  margin-bottom: 10px;
+  color: gray;
+}
+.block {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  /* background-color: red; */
+}
+/* .choose_seat_content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.choose_seat_shafawrap {
+  background-color: green;
+}
+.choose_seat_shafawrap li {
+  background-color: red;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  justify-content: space-around;
 }
+.choose_seat_shafawrap li span {
+  background-color: red;
+  justify-items: self-end; */
+/* } */
 body {
   padding: 0;
   margin: 0;

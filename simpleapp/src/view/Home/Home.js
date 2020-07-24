@@ -19,13 +19,6 @@ export default class Home extends Component {
           <Route path={path + "/personal"} component={Personal} />
           <Redirect from={path} to={path + "/index"}></Redirect>
         </Switch>
-        <button
-          onClick={() => {
-            this.props.history.push("/pay");
-          }}
-        >
-          payTest
-        </button>
         <div className={HomeCss.HomeBottom}>
           <HomeBottom />
         </div>
