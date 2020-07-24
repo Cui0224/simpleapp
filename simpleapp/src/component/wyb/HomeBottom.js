@@ -10,19 +10,19 @@ class HomeBottom extends Component {
     console.log(this.props);
     return (
       <div className={HomeBottomCss.footer} >
-        <NavLink to={path+"/index"} activeClassName="active1">
+        <NavLink to={path + "/index"} >
           <span className="iconfont icon-shouye"></span>
           <p>首页</p>
         </NavLink>
-        <NavLink to={path+"/theater"} activeClassName="active1">
+        <NavLink to={path + "/theater"}>
           <span className="iconfont icon-yingyuan"></span>
           <p>剧院</p>
         </NavLink>
-        <NavLink to={path+"/lol"} activeClassName="active1">
+        <NavLink to={path + "/lol"} >
           <span className="iconfont icon-LOL"></span>
           <p>吐了</p>
         </NavLink>
-        <NavLink to={path+"/personal"} activeClassName="active1">
+        <NavLink to={path + "/personal"} >
           <span className="iconfont icon-yixianshi_huaban"></span>
           <p>我的</p>
         </NavLink>

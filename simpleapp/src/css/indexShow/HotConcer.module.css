@@ -1,3 +1,4 @@
+.indexlist p{margin-bottom: 0;}
 /* 热门演出，演唱会，展览，儿童剧 */
 .hot{margin-top: 20px;}
 .hot .title{display: flex;align-items: center;justify-content: space-between;padding: 15px 0px;}
@@ -7,9 +8,9 @@
 #s_container img{width: 76px;height: 104px;border-radius: 5px;margin-bottom: 10px;}
 #s_container p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow:hidden;font-size: 14px;line-height: 20px;color: #232323;}
 /* 演唱会、展览休闲、儿童剧上部 */
-.exhibition{background-color: #352F23;display: flex;width: 100%;position: relative;left: -15px;padding: 15px;}
-.children{background-color: #352F23;display: flex;width: 100%;position: relative;left: -15px;padding: 15px;}
-.singtop1{display: flex;background-color: #77748C;width: 100%;position: relative;left: -15px;padding: 15px;}
+.exhibition{background-color: #352F23;display: flex;width: 375px;position: relative;left: -15px;padding: 15px;}
+.children{background-color: #352F23;display: flex;width: 375px;position: relative;left: -15px;padding: 15px;}
+.singtop1{display: flex;background-color: #77748C;width: 375px;position: relative;left: -15px;padding: 15px;}
 .sing_l{margin-right: 15px;}
 .sing_l::after{content: "";display: block;width: 29px;height: 35px;background: url("/mainhold.png") no-repeat;position: absolute;left: 22px; top: 15px;background-size: 29px;}
 .sing_l img{width: 104px;height: 140px;border-radius: 5px;border: 1px solid #fff;}
@@ -24,23 +25,23 @@
 .sing_r i{font-style: normal;font-size: 12px;}
 /* 演唱会 */
 #sw_container{margin: 15px 0;}
-#sw_container img{width: 76px;height: 104px;border-radius: 5px;margin-bottom: 10px;}
+#sw_container img{width: 76px;height: 104px;border-radius: 5px;margin:0 auto 10px auto;display: block;}
 #sw_container p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow:hidden;font-size: 12px;line-height: 16px;color: #232323;}
 #sw_container p{line-height: 20px;font-size: 14px;text-align: left;padding-left: 1em;}
-#sw_container p:nth-of-type(2){color: #999999;}
-#sw_container p em{font-style: normal;font-size: 14px;color: #FF6743;margin-right: 6px;}
+#sw_container p:nth-of-type(2){color: #999999;font-size: 12px;line-height: 22px;}
+#sw_container p em{font-style: normal;font-size: 16px;color: #FF6743;margin-right: 6px;}
 /* 展览休闲 */
 #swi_container{margin: 15px 0;}
-#swi_container img{width: 76px;height: 104px;border-radius: 5px;margin-bottom: 10px;margin-top: 10px;}
+#swi_container img{width: 76px;height: 104px;border-radius: 5px;margin: 10px auto; display: block;}
 #swi_container p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow:hidden;font-size: 12px;line-height: 16px;color: #232323;}
 #swi_container p{line-height: 20px;font-size: 14px;text-align: left;padding-left: 2em;}
-#swi_container p:nth-of-type(2){color: #999999;text-align: left;margin-bottom: 10px;}
-#swi_container p em{font-style: normal;font-size: 14px;color: #FF6743;margin-right: 6px;}
-.swiper-slide-active img{width: 90px;height: 118px;}
+#swi_container p:nth-of-type(2){color: #999999;text-align: left;margin-bottom: 10px;font-size: 12px;line-height: 22px;}
+#swi_container p em{font-style: normal;font-size: 16px;color: #FF6743;margin-right: 6px;}
+.swiper-slide-active img{width: 90px;height: 118px;display: block;}
 /* 儿童剧 */
 #swip_container{margin: 15px 0;}
 #swip_container img{width: 76px;height: 104px;border-radius: 5px;margin-bottom: 10px;}
 #swip_container p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow:hidden;font-size: 12px;line-height: 16px;color: #232323;}
 #swip_container p{line-height: 20px;font-size: 14px;text-align: left;}
-#swip_container p:nth-of-type(2){color: #999999;text-align: left;}
-#swip_container p em{font-style: normal;font-size: 14px;color: #FF6743;margin-right: 6px;}
+#swip_container p:nth-of-type(2){color: #999999;text-align: left;font-size: 12px;line-height: 22px;}
+#swip_container p em{font-style: normal;font-size: 16px;color: #FF6743;margin-right: 6px;}
