@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import css from "../css/pay/pay.module.css";
-import { Drawer, Button, Radio, Space } from "antd";
+import { Drawer, Button, Space } from "antd";
 import "../css/pay/iconfont/iconfont.css";
 import "antd/dist/antd.css";
 // const [visible, setVisible] = useState(false);
