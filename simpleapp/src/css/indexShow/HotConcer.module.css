@@ -1,3 +1,4 @@
+/* 热门演出，演唱会，展览，儿童剧 */
 .hot{margin-top: 20px;}
 .hot .title{display: flex;align-items: center;justify-content: space-between;padding: 15px 0px;}
 .hot .title_l h2{font-size: 18px;font-weight: 700;color: #232323;}
