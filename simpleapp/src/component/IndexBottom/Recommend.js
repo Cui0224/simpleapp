@@ -16,18 +16,6 @@ export default class Recommend extends Component {
             })
         })
     }
-    renderChildren() {
-        return this.state.array.map((i, key) => {
-            return (
-                <div></div>
-            );
-        }, this);
-    }
-    getAutoResponsiveProps() {
-        return {
-            itemMargin: 0
-        };
-    }
     render() {
         let { recommendList } = this.state;
         return (
@@ -35,13 +23,23 @@ export default class Recommend extends Component {
                 <div className={reStyle.re_t}>
                     <h1>为你推荐</h1>
                 </div>
-                <div className={reStyle.re_b}>
+                <ul className={reStyle.re_b}>
                     {
-                        recommendList.length && recommendList.map((item, i) => <div className="re_list" key={i}>
-                            <img src={item.img} alt="" />
-                        </div>)
+                        recommendList.length && recommendList.map((item, i) =>
+                            <li className={reStyle.re_list} key={i}>
+                                <img src={item.img} alt="" />
+                                <div className={reStyle.recontent}>
+                                    <p>{item.host == "false" ? <span style="background:linear-gradient(right,#FF8F37,#FF5947);borderRadius:10px;color:#fff;">主办</span> : ""} {item.text}</p>
+                                    <p>{item.date}</p>
+                                    <p><span>{item.price}</span> &nbsp;起</p>
+                                    <p>
+                                        {item.tag.length && item.tag.map((value, keys) => <span key={keys}>{value}</span>)}
+                                    </p>
+                                </div>
+                            </li>
+                        )
                     }
-                </div>
+                </ul>
             </div>
         )
     }

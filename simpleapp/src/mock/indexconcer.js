@@ -41,11 +41,12 @@ module.exports = () => {
         'recommend|30': [{
             'id|+1': 1,
             'img': '/01.jpg',
-            'mainhold': true,
+            'hold': "true",
             'text': "聚橙制作|百老汇爱情音乐轻松",
             'date': "2020.12.23 - 12.26",
-            'money': "￥100",
+            'price': "￥100",
             'city': "广州",
+            'tag': ["套票", "电子票", "可选座", "限时8.5折起"],
         }],
     })
     return data
