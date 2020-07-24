@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HomeBottom from "../../component/HomeBottom";
+import HomeBottom from "../../component/wyb/HomeBottom";
 import HomeCss from "../../css/wyb/Home.module.css";
 import { Route, Redirect, Switch } from "react-router-dom";
 import Index from "./Index";
