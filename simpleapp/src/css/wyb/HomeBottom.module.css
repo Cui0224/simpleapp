@@ -1,9 +1,10 @@
-.footer{
-    color: springgreen;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+.footer {
+  color: springgreen !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.footer span{font-size: 30px;}
+.footer span {
+  font-size: 30px;
+}
 /* .footer a{text-decoration: none;color: #000;} */
