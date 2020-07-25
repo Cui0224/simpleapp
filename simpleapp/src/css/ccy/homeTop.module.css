@@ -1,0 +1,43 @@
+.box {
+  position: sticky;
+  top: 0;
+  z-index: 10000000;
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  background: white;
+  margin-bottom: -50px;
+  box-shadow: -1px -10px 20px 1px black;
+}
+.box p:first-child {
+  color: #232323;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.box p:first-child span {
+  color: orange;
+  margin-right: 5px;
+}
+.box p:last-child {
+  width: 50px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  transform: scale(1.5);
+}
+.box p:nth-of-type(2) {
+  flex: 1;
+  display: flex;
+}
+
+.box p:nth-of-type(2) input {
+  flex: 1;
+  width: 100%;
+  background-color: #eee;
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  text-indent: 10px;
+}
