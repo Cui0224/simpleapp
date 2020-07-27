@@ -12,7 +12,7 @@
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
     "json-server": "^0.16.1",
-    "md": "^4.4.3",
+   
     "mockjs": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

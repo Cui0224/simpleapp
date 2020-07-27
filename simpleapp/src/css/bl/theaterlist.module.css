@@ -1,0 +1,82 @@
+.bl_avatar{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin:10px 0 0 10px;
+}
+.box{
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: 12px;
+    box-shadow: 0 0 5px 1px #ddd;
+    
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background:#eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper_container {
+    width: 100%;
+    height: 200px;
+}
+.swiper_slide {
+    height: 200px;
+    font-size: 18px;
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+}
+.postimg{
+    width: 110px;
+    height: 146px;
+    margin-left: 10px;
+}
+.postime{
+    text-align: center;
+}
+.avatimg{
+    float: right;
+    width: 14px;
+    margin: 35px 5px 0 0;
+}
+.box dl{
+    padding: 5px 0 0 5px;
+    float: left;
+    
+}
+.box dt{
+    font-size: 20px;
+    margin-top: 6px;
+    font-weight: 800;
+}
+.list_title{
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #fff;
+    padding: 8px;
+    box-shadow: 0 -1px 5px 1px #ddd;
+
+}
+
