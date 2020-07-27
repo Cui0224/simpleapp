@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { withRouter } from "react-router-dom";
-import { Route, NavLink, Redirect, Switch } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import TypelistCss from "../../css/wyb/HomeIndexTypelist.module.css";
 import "../../css/wyb/iconfont1/iconfont.css";
 class Tpyelist extends Component {

@@ -1,11 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Ticket extends Component {
-    render() {
-        return (
-            <div>
-                ticket
-            </div>
-        )
-    }
+  render() {
+    return <div>ticket</div>;
+  }
 }
