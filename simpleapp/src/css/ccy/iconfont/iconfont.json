@@ -1,0 +1,93 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "649365",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "827618",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "1365376",
+      "name": "日历",
+      "font_class": "rili1",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "1718328",
+      "name": "日历8",
+      "font_class": "rili2",
+      "unicode": "f0345",
+      "unicode_decimal": 983877
+    },
+    {
+      "icon_id": "3216579",
+      "name": "地图坐标",
+      "font_class": "dituzuobiao",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "4948953",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "5017108",
+      "name": "沙发",
+      "font_class": "shafa",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "5802479",
+      "name": "放大镜",
+      "font_class": "Magnifier",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "7116472",
+      "name": "地图-地标",
+      "font_class": "ditu-dibiao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "11671987",
+      "name": "地图",
+      "font_class": "ditu1",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "11690680",
+      "name": "沙发",
+      "font_class": "ziyuan",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "13000504",
+      "name": "放大镜",
+      "font_class": "fangdajing1",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

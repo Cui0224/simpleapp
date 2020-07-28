@@ -512,13 +512,11 @@ export default class City extends Component {
   scrollTo = (e, target) => {
     let { bsScroll } = this.state;
     bsScroll.scrollToElement(`.cy${target}`, 1000);
-    // this.setState({});
   };
   /* 
     点击城市，获取对应城市
   */
   clickCity = (e) => {
-    console.log(e.target.innerText);
     localStorage.setItem("localCity", e.target.innerText);
     this.props.history.push("/home");
   };
