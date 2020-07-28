@@ -39,12 +39,12 @@ class Address extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      location: { lng: '', lat: '' },
+      //   location: { lng: '', lat: '' },
     }
   }
 
   render() {
-    let { location } = this.state
+    // let { location } = this.state
     // console.log(location, 111)
     const position = {
       //   longitude: 125.392002,
