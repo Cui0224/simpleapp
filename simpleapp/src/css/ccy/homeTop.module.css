@@ -8,6 +8,7 @@
   align-items: flex-end;
   background: white;
   margin-bottom: -50px;
+  overflow: hidden;
   /* box-shadow: -1px -10px 20px 1px black; */
 }
 .box p:first-child {
