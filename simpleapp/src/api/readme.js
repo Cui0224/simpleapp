@@ -11,6 +11,6 @@
     参数： id: 用户id
     返回： 相关用户详情信息
 */
-export async function get_userList(id) {
-  return await axios(url, id);
-}
+// export async function get_userList(id) {
+//   return await axios(url, id);
+// }
