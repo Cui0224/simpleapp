@@ -1,6 +1,6 @@
 import React from "react";
 import IndexRouter from "./router/IndexRouter";
-import "./css/index.css";
+
 import "./AppCss.css"
 function App() {
   return (
