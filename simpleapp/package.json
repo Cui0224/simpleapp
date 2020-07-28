@@ -3,30 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@better-scroll/core": "^2.0.0-beta.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.4.3",
-    "antd-mobile": "^2.3.3",
+    "autoresponsive-react": "^1.1.31",
     "axios": "^0.19.2",
-    "rc-form": "^2.4.11",
+    "better-scroll": "^1.15.2",
+    "element-react": "^1.4.34",
+    "element-theme-default": "^1.4.13",
+    "json-server": "^0.16.1",
+    "mockjs": "^1.1.0",
     "react": "^16.13.1",
     "react-amap": "^1.2.8",
     "react-dom": "^16.13.1",
-    "react-indexlist": "^1.0.7",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
-    "styled-components": "^5.1.1"
+    "swiper": "^5.4.5"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test --env=jsdom",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "mock": "json-server ./mock/mock.js -p 8008 -r ./mock/route.json"
+    "json": "json-server --watch --port 3001 ./src/mock/indexconcer.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,11 +47,7 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {
-    "customize-cra": "^1.0.0",
-    "http-proxy-middleware": "^1.0.5",
-    "react-app-rewired": "^2.1.6"
-  },
+  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"

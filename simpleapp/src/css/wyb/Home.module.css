@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.HomeBottom{
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+    height: 80px;
+    background: #FEFEFE;
+    padding-top: 5px;
+    z-index: 100000;
+}
+

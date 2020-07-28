@@ -1,7 +1,0 @@
-{
-  "/api/order": "/order",
-  "/api/city": "/city",
-  "/api/list": "/list",
-  "/api/detail": "/detail",
-  "/api/cities/": "/cities"
-}

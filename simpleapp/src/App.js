@@ -1,8 +1,15 @@
-import React from 'react'
-import Index from './router/index'
+import React from "react";
+import IndexRouter from "./router/IndexRouter";
 
+import "./AppCss.css";
 function App() {
-  return <Index></Index>
+  return (
+    <div className="App">
+      <header className="App-header"></header>
+      <header className="App-container">
+        <IndexRouter></IndexRouter>
+      </header>
+    </div>
+  );
 }
-
-export default App
+export default App;

@@ -1,0 +1,3 @@
+.tu{color: thistle;}
+#tu{color: teal;}
+:global(#tu){font-size: 50px;}
