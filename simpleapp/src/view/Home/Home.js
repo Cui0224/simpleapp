@@ -6,10 +6,24 @@ import Index from "./Index";
 import Theater from "./Theater";
 import Lol from "./Lol";
 import Mine from "../mine/index";
+import axios from "axios";
 export default class Home extends Component {
+  componentDidMount() {
+    axios({
+      url: "http://192.168.9.45:8081/live/juooo/getDetailsById",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      params: {
+        id: 1,
+      },
+    }).then((res) => {
+      console.log(1);
+      console.log(res);
+    });
+  }
   render() {
     let { path } = this.props.match;
-    // console.log(this.props);
     return (
       <div>
         <Switch>
