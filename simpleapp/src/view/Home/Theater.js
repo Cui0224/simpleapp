@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import list_style from '../../css/bl/theaterlist.module.css'
+import list_style from '../../css/bl/theater.module.css'
+import "../../css/bl/iconfont/iconfont.css"
 import Swiper from 'swiper';
 import { Route, NavLink, Redirect, Switch } from "react-router-dom";
 export default class TheaterList extends Component {
@@ -22,8 +23,6 @@ export default class TheaterList extends Component {
                         'https://image.juooo.com//group1/M00/03/63/rAoKmV3y6wCAIXZIAAChpncncD0689.jpg',
                         'https://image.juooo.com//group1/M00/03/40/rAoKmV3LdBWAImHFAACB1n-G-Nk921.jpg',
                         'https://image.juooo.com//group1/M00/03/E6/rAoKNV3FDp2AYoW7AADDFklcihs978.jpg',
-
-
                     ]
                 },
 
@@ -82,30 +81,39 @@ export default class TheaterList extends Component {
         return (
             <React.Fragment>
                 <div className={list_style.list_title}>剧院</div>
-                <div style={{paddingBottom:"80px"}}>
+                <div style={{ paddingBottom: "80px" }}>
                     {
                         Theater_List.map((v, i) => {
                             return (
                                 <div key={i} className={list_style.box}>
-                                    <div><img src={v.avatar} className={list_style.bl_avatar} />
-                                        <dl>
-                                            <dt>{v.theaterTitle}</dt>
-                                            <dd>{v.time}场在售演出</dd>
-                                        </dl>
+                                    <div>
+                                        <NavLink to={"/theaterlist"}>
+                                            <img src={v.avatar} className={list_style.bl_avatar} />
+                                        </NavLink>
+                                        <NavLink to={"/theaterlist"}>
+                                            <dl>
+                                                <dt>{v.theaterTitle}</dt>
+                                                <dd>{v.time}场在售演出</dd>
+                                            </dl>
+                                        </NavLink>
+
                                         <NavLink to={"/theaterlist"} >
-                                            <img src="https://m.juooo.com/static/img/more.2ce7873.png" className={list_style.avatimg} />
+                                            <img src={"/bl/more.2ce7873.png"} className={list_style.avatimg} />
                                         </NavLink>
 
                                     </div>
+                                    
                                     <div className={"swiper-container " + " " + list_style.swiper_container}>
                                         <div className={"swiper-wrapper " + " " + list_style.swiper_wrapper}>
                                             {v.show_posters.map((item, index) => (
                                                 <div className={"swiper-slide " + " " + list_style.swiper_slide} key={index}>
                                                     <p className={list_style.postime}>{v.showdatatime[index]}</p>
+                                                    <span className={"iconfont icon-dian "+list_style.dian}></span>
                                                     <img src={item} className={list_style.postimg} />
                                                 </div>
 
                                             ))}
+
                                         </div>
                                     </div>
                                 </div>
