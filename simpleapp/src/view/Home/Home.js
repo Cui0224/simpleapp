@@ -5,7 +5,7 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import Index from "./Index";
 import Theater from "./Theater";
 import Lol from "./Lol";
-import Personal from "./Personal";
+import Mine from "../mine/index";
 export default class Home extends Component {
   render() {
     let { path } = this.props.match;
@@ -16,7 +16,8 @@ export default class Home extends Component {
           <Route path={path + "/index"} component={Index} />
           <Route path={path + "/theater"} component={Theater} />
           <Route path={path + "/lol"} component={Lol} />
-          <Route path={path + "/personal"} component={Personal} />
+          {/* <Route path={path + "/personal"} component={Personal} /> */}
+          <Route path={path + "/mine"} component={Mine} />
           <Redirect from={path} to={path + "/index"}></Redirect>
         </Switch>
         <div className={HomeCss.HomeBottom}>

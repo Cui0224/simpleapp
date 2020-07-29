@@ -22,7 +22,7 @@ class HomeBottom extends Component {
           <span className="iconfont icon-LOL"></span>
           <p>吐了</p>
         </NavLink>
-        <NavLink to={path + "/personal"}>
+        <NavLink to={path + "/mine"}>
           <span className="iconfont icon-yixianshi_huaban"></span>
           <p>我的</p>
         </NavLink>
