@@ -1,5 +1,7 @@
 .box * {
   margin: 0;
+  /* overflow-x: hidden; */
+  /* padding-right: 10px; */
 }
 .head {
   /* border: 1px solid black; */
