@@ -6,6 +6,22 @@ import Swiper from "../../component/wyb/Swiper";
 import Typelist from "../../component/wyb/Tpyelist";
 import HomeTop from "../../component/ccy/homeTop";
 export default class Index extends Component {
+  componentDidMount() {
+    fetch("http://118.190.201.38:8080/juooo/getDetailsById", {
+      params: { id: 1 },
+      headers: {
+        "content-type": "application/json;charset=UTF-8",
+        date: "Wed, 29 Jul 2020 06:49:05 GMT",
+        "transfer-encoding": "chunked",
+      },
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((res) => {
+        console.log(res);
+      });
+  }
   render() {
     return (
       <>
