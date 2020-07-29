@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import css from "../css/ccy/ticket/ticket.module.css";
-import { Drawer, Button } from "antd";
+import { Drawer } from "antd";
 // import { recommend } from "../api/index.js";
 import "../css/wyb/iconfont/iconfont.css";
 import "../css/ccy/iconfont/iconfont.css";

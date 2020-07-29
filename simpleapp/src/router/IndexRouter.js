@@ -7,7 +7,7 @@ import City from "../view/City";
 import Ticket from "../view/Ticket";
 import TheaterList from "../view/TheaterList";
 import Mapp from "../view/Map";
-import { Route, NavLink, Redirect, Switch } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 export default class IndexRouter extends Component {
   render() {
     return (
