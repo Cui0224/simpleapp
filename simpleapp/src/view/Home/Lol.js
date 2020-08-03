@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LolCss from "../../css/wyb/Homelol.module.css"
+// import LolCss from "../../css/wyb/Homelol.module.css"
 import Confirm from "../../component/IndexBottom/Confirm"
 export default class Lol extends Component {
     render() {

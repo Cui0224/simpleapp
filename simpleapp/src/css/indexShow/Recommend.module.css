@@ -1,4 +1,3 @@
-
 /* 为你推荐 */
 .recommend .re_t h1{font-size: 18px;font-weight: 700;color: #232323;text-align: left;line-height: 30px;}
 .recommend .re_b{display: flex;flex-wrap: wrap;} 
@@ -8,15 +7,7 @@
 .recommend .re_list:nth-of-type(2n+1){margin-right: 3px;}
 .recommend{max-height: 1000px;overflow: hidden;touch-action: none;margin-bottom: 80px; }
 .recommend p{margin-bottom: 0;}
-/* 为你推荐 */
 
-.recommend{max-height: 1000px;overflow: hidden;touch-action: none;margin-bottom: 80px; }
-.recommend p{margin-bottom: 0;}
-/* 为你推荐 */
-
-.recommend{max-height: 1000px;overflow: hidden;touch-action: none;margin-bottom: 80px; }
-.recommend p{margin-bottom: 0;}
-/* 为你推荐 */
 .re_t h1{font-size: 18px;font-weight: 700;color: #232323;text-align: left;line-height: 28px;padding:15px 0;}
 .re_b{display: flex;flex-wrap: wrap;} 
 .re_list{border: 1px solid #EBEBEB;background-color: #fff;width: 168px;position: relative;margin-bottom: 3px;float: left;}

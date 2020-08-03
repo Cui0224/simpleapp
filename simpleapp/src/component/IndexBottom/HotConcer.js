@@ -179,7 +179,7 @@ export default class HotConcer extends Component {
                     </div>
                     {/* 展览休闲上部 */}
                     {
-                        singsongstop.length && singsongstop.map((item, index) => {
+                        exhibitionstop.length && exhibitionstop.map((item, index) => {
                             return <div key={index} className={style.singtop1, style.exhibition}>
                                 <div className={style.sing_l}>
                                     <img src={item.img} alt="" />

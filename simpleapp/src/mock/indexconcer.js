@@ -54,8 +54,8 @@ module.exports = () => {
             'time': '2020.12.23 周三 19:30 ',
             'place': '广州 | 广东艺术剧院（原广东演艺中心大剧院）',
             'count': 1,
-            'money': '280.00',
-            'yunfei': "15.00",
+            'money': 280,
+            'yunfei': 15,
         }]
     })
     return data

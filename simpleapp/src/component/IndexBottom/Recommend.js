@@ -62,7 +62,7 @@ export default class Recommend extends Component {
                                     <img src={item.img} alt="" />
                                     <i>{item.city}</i>
                                     <div className={reStyle.recontent}>
-                                        <p>{item.hold == "true" ? <span>主办</span> : ""} {item.text}</p>
+                                        <p>{item.hold === "true" ? <span>主办</span> : ""} {item.text}</p>
                                         <p>{item.date}</p>
                                         <p><span>{item.price}</span> &nbsp;起</p>
                                         <p>
@@ -80,7 +80,7 @@ export default class Recommend extends Component {
                             <li className={reStyle.re_list} key={i}>
                                 <img src={item.img} alt="" />
                                 <div className={reStyle.recontent}>
-                                    <p>{item.host == "false" ? <span style="background:linear-gradient(right,#FF8F37,#FF5947);borderRadius:10px;color:#fff;">主办</span> : ""} {item.text}</p>
+                                    <p>{item.host === "false" ? <span style="background:linear-gradient(right,#FF8F37,#FF5947);borderRadius:10px;color:#fff;">主办</span> : ""} {item.text}</p>
                                     <p>{item.date}</p>
                                     <p><span>{item.price}</span> &nbsp;起</p>
                                     <p>

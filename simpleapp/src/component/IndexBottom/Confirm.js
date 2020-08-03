@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import { confirm } from "../../api/index"
-import { Drawer, Button, notification } from 'antd';
+import { Drawer } from 'antd';
 import cStyle from "../../css/indexShow/Confirm.module.css"
 import "../../css/wyb/iconfont2/iconfont.css"
 class Confirm extends Component {
@@ -115,7 +115,7 @@ class Confirm extends Component {
         return (
             <div className={cStyle.confirm}>
                 <div className={cStyle.header1}>
-                    <span onClick={() => { this.props.history.back }}>&lt;</span>
+                    <span onClick={() => { this.props.history.back() }}>&lt;</span>
                     <p>确认订单</p>
                 </div>
                 <div className={cStyle.title}>
@@ -252,7 +252,7 @@ class Confirm extends Component {
                                 <span>购卡送100元</span>
                                 <div onClick={this.changeicon}>
                                     {
-                                        change == true ? <span className="iconfont icon-xuanzhong"></span> : <span className="iconfont icon-weixuanzhong"></span>
+                                        change === true ? <span className="iconfont icon-xuanzhong"></span> : <span className="iconfont icon-weixuanzhong"></span>
 
                                     }
                                 </div>
@@ -269,7 +269,7 @@ class Confirm extends Component {
                                 <span></span>
                                 <div onClick={this.changeicon1}>
                                     {
-                                        change1 == true ? <span className="iconfont icon-xuanzhong"></span> : <span className="iconfont icon-weixuanzhong"></span>
+                                        change1 === true ? <span className="iconfont icon-xuanzhong"></span> : <span className="iconfont icon-weixuanzhong"></span>
 
                                     }
                                 </div>
@@ -286,7 +286,7 @@ class Confirm extends Component {
                                 <span></span>
                                 <div onClick={this.changeicon2}>
                                     {
-                                        change2 == true ? <span className="iconfont icon-xuanzhong"></span> : <span className="iconfont icon-weixuanzhong"></span>
+                                        change2 === true ? <span className="iconfont icon-xuanzhong"></span> : <span className="iconfont icon-weixuanzhong"></span>
                                     }
                                 </div>
                             </div>
@@ -302,7 +302,7 @@ class Confirm extends Component {
                                 <span> 新用户先消费，后还款</span>
                                 <div onClick={this.changeicon3}>
                                     {
-                                        change3 == true ? <span className="iconfont icon-xuanzhong"></span> : <span className="iconfont icon-weixuanzhong"></span>
+                                        change3 === true ? <span className="iconfont icon-xuanzhong"></span> : <span className="iconfont icon-weixuanzhong"></span>
                                     }
                                 </div>
                             </div>
