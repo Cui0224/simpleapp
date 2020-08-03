@@ -91,6 +91,7 @@ export default class Recommend extends Component {
                         )
                     }
                 </ul>
+
             </div>
         )
     }

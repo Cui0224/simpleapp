@@ -11,7 +11,6 @@ function App() {
           <IndexRouter></IndexRouter>
         </Router>
       </div>
-
     </div>
   );
 }

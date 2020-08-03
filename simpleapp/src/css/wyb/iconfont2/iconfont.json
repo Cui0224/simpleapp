@@ -1,0 +1,72 @@
+{
+  "id": "1971613",
+  "name": "jhx",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "732716",
+      "name": "选中",
+      "font_class": "xuanzhong",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "960026",
+      "name": "未选中",
+      "font_class": "weixuanzhong",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "1920212",
+      "name": "微信方",
+      "font_class": "weixinfang",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "4769998",
+      "name": "VIP",
+      "font_class": "VIP",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "14043391",
+      "name": "新车分期",
+      "font_class": "xinchefenqi",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "14110604",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "12686562",
+      "name": "警告",
+      "font_class": "icon_jinggao",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "1990040",
+      "name": "时钟",
+      "font_class": "clock",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "3764362",
+      "name": "定位",
+      "font_class": "weibiaoti-",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    }
+  ]
+}
