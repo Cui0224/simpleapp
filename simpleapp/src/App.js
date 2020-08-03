@@ -1,14 +1,16 @@
 import React from "react";
-import IndexRouter from "./router/IndexRouter"
-import "./css/index.css"
+import { BrowserRouter as Router } from "react-router-dom";
+import IndexRouter from "./router/IndexRouter";
+import "./AppCss.css"
 function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <header className="App-container">
-
-        <IndexRouter></IndexRouter>
-      </header>
+      <div className="App-container">
+        <Router>
+          <IndexRouter></IndexRouter>
+        </Router>
+      </div>
 
     </div>
   );

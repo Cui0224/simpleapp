@@ -14,6 +14,7 @@ export default class Index extends Component {
                     {/* 为你推荐 */}
                     <Recommend></Recommend>
                 </div>
+
             </div>
         )
     }

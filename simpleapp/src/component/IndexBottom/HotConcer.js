@@ -66,6 +66,8 @@ export default class HotConcer extends Component {
     componentDidMount() {
         // 热门演出
         show().then(({ data }) => {
+            console.log(data);
+
             this.setState({
                 shows: data
             })
