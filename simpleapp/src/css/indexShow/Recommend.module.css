@@ -1,0 +1,18 @@
+.recommend p{margin-bottom: 0;}
+/* 为你推荐 */
+.recommend{margin-bottom: 80px;} 
+.recommend .re_t h1{font-size: 18px;font-weight: 700;color: #232323;text-align: left;line-height: 28px;padding:15px 0;}
+.recommend .re_b{display: flex;flex-wrap: wrap;} 
+.recommend .re_list img{width: 168px;height: 234px;}
+.recommend .re_list i{font-style: normal;background: #4A4E54;color: #fff;position: absolute;right: 5px;top:10px;font-size: 14px;padding: 0 3px;}
+.recommend .re_list p{text-align: left;}
+.recommend .re_list{border: 1px solid #EBEBEB;background-color: #fff;width: 168px;position: relative;}
+.recommend .re_list:nth-of-type(2n+1){margin-right: 3px;}
+.recommend .re_list:nth-of-type(2n) .recontent{box-shadow: 20px 0 10px -3px #FBFBFB}
+.recontent{padding: 5px 12px 14px 12px;}
+.recontent p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow:hidden;font-size: 14px;line-height: 22px;color: #232323;}
+.recontent p:nth-of-type(1) span{background:-webkit-linear-gradient(left,#FF8F37,#FF5947);border-radius:20px;font-size: 12px;padding:2px 5px;color: #FEFAF9;}
+.recontent p:nth-of-type(3){color: #666666;font-size: 12px;}
+.recontent p:nth-of-type(3) span{color: #FF7453;font-size: 16px;}
+.recontent p:nth-of-type(2){color: #666666;font-size: 14px;line-height: 30px;}
+.recontent p:nth-of-type(4) span{color: #FF7453;font-size: 12px;background-color: #FFF1EF;border-radius: 10px;margin-right: 5px;padding: 0 4px;}

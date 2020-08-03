@@ -1,0 +1,16 @@
+.footer {
+  color: springgreen;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer span {
+  font-size: 30px;
+}
+.footer :global(.active) {
+  color: tomato;
+}
+.footer a {
+  text-decoration: none;
+  color: #000;
+}

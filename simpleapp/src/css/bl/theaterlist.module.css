@@ -1,0 +1,98 @@
+.header{
+    width: 100%;
+    height: 160px;
+    background:url("/bl/theater_detail_bg.png") no-repeat;
+    background-size:100% 160px ;
+   
+}
+.toubox{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+  
+}
+.box{
+    width: 100%;
+    height: 144px; 
+    padding: 0 15px;
+    margin-bottom: 30px;
+    
+}
+.posters{
+    width:105px;
+    height: 144px;
+    float: left;
+    margin-right: 5px;
+}
+.icontu{
+    font-size: 30px;
+    color: #fff;
+}
+.smallbox{
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+dl{
+    display:inline-block ;
+    margin-left: 5px;
+}
+dt{
+    font-size: 18px;
+    padding-left: 10px;
+}
+dd{
+    
+    font-size: 14px;
+    padding-left: 10px;
+}
+.address{
+    color: #fff;
+    display:inline-block;
+    margin-left: 10px;
+   
+}
+.dingwei{
+   width: 25px;
+   height: 25px;
+   border-radius: 10px;
+   float: right;
+   background: url("/bl/dingwei.png") no-repeat;
+   background-size: 18px 18px;  
+   
+}
+.active_type{
+    font-size: 12px;
+    margin-left:5px;
+    color: #ff6743;
+    background-color: #fff1ef;
+    border-radius: 20px;
+    display: inline-block;
+    width:auto;
+    padding: 0 5px;
+    margin-top: 5px;
+}
+.hot_title{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top:10px;
+    margin-left: 15px;
+}
+.price{
+    color:#ff6743;
+    margin-top: 5px;
+}
+.qi{
+    color: #999;
+    
+}
+.intru{
+    font-size: 16px;
+    color: #232323;
+
+}
+.wu{
+    text-align: center;
+}
