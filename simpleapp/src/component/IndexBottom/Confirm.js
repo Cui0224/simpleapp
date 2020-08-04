@@ -139,6 +139,19 @@ class Confirm extends Component {
                                 <span>配送方式</span>
                                 <p><span className={cStyle.lispan}>快递</span> > </p>
                             </div>
+                            <Drawer
+                                title="选择配送方式"
+                                placement={"bottom"}
+                                closable={false}
+                                onClose={this.onClose}
+                                visible={visible}
+                                key="1"
+                            >
+                                <div className={cStyle.drawer}>
+                                    <span>快递</span>
+                                    <span>√</span>
+                                </div>
+                            </Drawer>
                             <div type="primary" onClick={this.showDrawer1} className={cStyle.li}>
                                 <p>
                                     <span>{arr[idx].name}</span>
@@ -155,19 +168,7 @@ class Confirm extends Component {
                                 </p>
                             </div>
                         </div>
-                        <Drawer
-                            title="选择配送方式"
-                            placement={"bottom"}
-                            closable={false}
-                            onClose={this.onClose}
-                            visible={visible}
-                            key="1"
-                        >
-                            <div className={cStyle.drawer}>
-                                <span>快递</span>
-                                <span>√</span>
-                            </div>
-                        </Drawer>
+
                         <Drawer
                             title="选择收货地址"
                             placement={"bottom"}
