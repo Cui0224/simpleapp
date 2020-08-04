@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 import Headerbar from '../.././../component/mine/headerbar'
 import Buttont from '../../../component/mine/button'
 import styled from 'styled-components'
+<<<<<<< HEAD
 import { city } from '../../../api/get'
+=======
+import axios from 'axios'
+>>>>>>> wyy1
 
 const FormContainer = styled.div`
   div {
@@ -76,6 +80,10 @@ const Picker = styled.div`
     }
   }
 `
+<<<<<<< HEAD
+=======
+
+>>>>>>> wyy1
 class Add_address extends Component {
   constructor(props) {
     super(props)
@@ -90,11 +98,53 @@ class Add_address extends Component {
   }
   get = (e) => {
     let value = e.target.value
+<<<<<<< HEAD
+=======
+    if (value == '') {
+      alert('不为空')
+    }
+>>>>>>> wyy1
     this.setState({
       [e.target.name]: value,
     })
   }
 
+<<<<<<< HEAD
+=======
+  save = (e) => {
+    let value1 = this.refs.consignee.value
+    let value2 = this.refs.phone.value
+    let value3 = this.refs.region.value
+    let value4 = this.refs.address.value
+    axios({
+      headers: { 'Content-Type': 'application/json;charset=utf-8' },
+      method: 'post',
+      url: 'http://192.168.9.78:8081/live/juooo/myModuleController/addaddress',
+      params: {
+        userid: 55555,
+        consignee: value1,
+        phone: value2,
+        region: value3,
+        address: value4,
+      },
+    }).then((res) => {
+      console.log(res)
+      this.setState({
+        consignee: '',
+        phone: '',
+        region: '',
+        address: '',
+      })
+    })
+
+    //   this.props.history.push('/address')
+
+    console.log(this.state.consignee, this.state.phone)
+  }
+  componentDidMount() {
+    this.save()
+  }
+>>>>>>> wyy1
   render() {
     let { citylist, consignee, phone, region, address } = this.state
 
@@ -106,6 +156,10 @@ class Add_address extends Component {
             <label>收货人</label>
             <div>
               <input
+<<<<<<< HEAD
+=======
+                ref="consignee"
+>>>>>>> wyy1
                 type="text"
                 placeholder="请输入收货人姓名"
                 value={consignee}
@@ -118,6 +172,10 @@ class Add_address extends Component {
             <label>手机号</label>
             <div>
               <input
+<<<<<<< HEAD
+=======
+                ref="phone"
+>>>>>>> wyy1
                 type="text"
                 placeholder="请输入手机号"
                 value={phone}
@@ -130,6 +188,10 @@ class Add_address extends Component {
             <label>所在地区</label>
             <div>
               <input
+<<<<<<< HEAD
+=======
+                ref="region"
+>>>>>>> wyy1
                 type="text"
                 placeholder="请输入所在地区"
                 value={region}
@@ -143,6 +205,10 @@ class Add_address extends Component {
             <label>详细地址</label>
             <div>
               <input
+<<<<<<< HEAD
+=======
+                ref="address"
+>>>>>>> wyy1
                 type="text"
                 placeholder="请输入详细地址"
                 value={address}
@@ -153,9 +219,13 @@ class Add_address extends Component {
           </div>
         </FormContainer>
         <Buttont>
+<<<<<<< HEAD
           <button onClick={() => this.props.history.push('/address')}>
             保存
           </button>
+=======
+          <button onClick={this.save}>保存</button>
+>>>>>>> wyy1
         </Buttont>
 
         {/* {get_pick()} */}
@@ -195,6 +265,7 @@ class Add_address extends Component {
       </div>
     )
   }
+<<<<<<< HEAD
   async getcitylist() {
     let res = await city()
     console.log(res)
@@ -205,6 +276,18 @@ class Add_address extends Component {
   componentDidMount() {
     this.getcitylist()
   }
+=======
+  //   async getcitylist() {
+  //     let res = await city()
+  //     console.log(res)
+  //     this.setState({
+  //       citylist: res.data.province,
+  //     })
+  //   }
+  //   componentDidMount() {
+  //     this.getcitylist()
+  //   }
+>>>>>>> wyy1
 
   Show = () => {
     if (this.state.display === 'none') {

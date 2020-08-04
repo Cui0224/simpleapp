@@ -1,15 +1,58 @@
 import React, { Component } from 'react'
 import { Form, Input, Button } from 'antd'
 import { BodyContainer } from '../register/register.style'
+<<<<<<< HEAD
+=======
+import axios from 'axios'
+// import '../../../mock1/index
+>>>>>>> wyy1
 class login extends Component {
   constructor(props) {
     super(props)
     this.state = {
+<<<<<<< HEAD
+=======
+      id: 1,
+>>>>>>> wyy1
       password: '',
       phone: '',
     }
   }
+<<<<<<< HEAD
 
+=======
+  onFinish = (values) => {
+    console.log(values, this.state.userPattern)
+    axios({
+      //   headers: { 'Content-Type': 'application/json;charset=utf-8' },
+      method: 'get',
+      url: 'http://192.168.9.78:8081/live/juooo/myModuleController/userLogin',
+      params: {
+        phone: values.phone,
+        password: values.password,
+      },
+    }).then((res) => {
+      console.log(res)
+      if (res.data.data == '登录失败') {
+        alert('错误')
+        this.setState({
+          phone: '',
+          password: '',
+        })
+      } else {
+        localStorage.setItem('user', values.phone)
+        this.props.history.push('/mine')
+      }
+    })
+  }
+  tologin = (values) => {
+    let { phone, password } = this.state
+    console.log(phone, password)
+  }
+  componentDidMount() {
+    this.tologin()
+  }
+>>>>>>> wyy1
   render() {
     return (
       <div>
@@ -22,10 +65,22 @@ class login extends Component {
           <div className="code">
             <div>
               <div>
+<<<<<<< HEAD
                 <Form>
                   <Form.Item
                     name="phone"
                     label="Phone Number"
+=======
+                <Form
+                  initialValues={{
+                    remember: true,
+                  }}
+                  onFinish={this.onFinish}
+                >
+                  <Form.Item
+                    name="phone"
+                    label="phone"
+>>>>>>> wyy1
                     rules={[
                       {
                         required: true,
@@ -48,7 +103,11 @@ class login extends Component {
                   </Form.Item>
                   <Form.Item
                     name="password"
+<<<<<<< HEAD
                     label="Password"
+=======
+                    label="password"
+>>>>>>> wyy1
                     rules={[
                       {
                         required: true,
@@ -72,7 +131,17 @@ class login extends Component {
                     </Button>
                   </Form.Item>
                   <Form.Item className="login">
+<<<<<<< HEAD
                     <Button type="primary">login</Button>
+=======
+                    <Button
+                      type="primary"
+                      htmlType="submit"
+                      onClick={this.tologin}
+                    >
+                      login
+                    </Button>
+>>>>>>> wyy1
                   </Form.Item>
                 </Form>
               </div>
@@ -83,4 +152,8 @@ class login extends Component {
     )
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> wyy1
 export default login

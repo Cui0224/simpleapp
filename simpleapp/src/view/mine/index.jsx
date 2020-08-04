@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { MineContainer } from './indexstyle'
 import { withRouter } from 'react-router-dom'
 import hoc from '../../component/mine/hoc'
+<<<<<<< HEAD
 class index extends Component {
   constructor(props) {
     super(props)
@@ -10,6 +11,35 @@ class index extends Component {
     // console.log(this.props)
   }
   render() {
+=======
+import axios from 'axios'
+class index extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      userid: '',
+      nickname: '',
+    }
+  }
+  componentDidMount() {
+    axios({
+      method: 'get',
+      url: 'http://192.168.9.78:8081/live/juooo/myModuleController/personal',
+      params: {
+        userid: 55555,
+      },
+    }).then((res) => {
+      console.log(res)
+      this.setState({
+        nickname: res.data.data.nickname,
+        userid: res.data.data.userId,
+      })
+    })
+  }
+  render() {
+    const { userid, nickname } = this.state
+
+>>>>>>> wyy1
     return (
       <MineContainer>
         <div className="top">
@@ -23,9 +53,15 @@ class index extends Component {
                 />
               </div>
               <span onClick={() => this.props.history.push('/login')}>
+<<<<<<< HEAD
                 橙子
               </span>
               <span>id：2222</span>
+=======
+                {nickname}
+              </span>
+              <span>id：{userid}</span>
+>>>>>>> wyy1
             </div>
             <div className="label">
               <p>普通会员</p>

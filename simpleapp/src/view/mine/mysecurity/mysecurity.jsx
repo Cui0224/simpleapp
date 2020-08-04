@@ -29,7 +29,17 @@ export default class mysecurity extends Component {
             </div>
             <div className="item">
               <p>账号安全</p>
+<<<<<<< HEAD
               <i>&gt;</i>
+=======
+              <i
+                onClick={() => {
+                  this.props.history.push('/modify')
+                }}
+              >
+                &gt;
+              </i>
+>>>>>>> wyy1
             </div>
             <div className="item">
               <p>用户协议</p>
@@ -40,11 +50,22 @@ export default class mysecurity extends Component {
               <i>&gt;</i>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="btn">
+=======
+          <div className="btn" onClick={this.exit}>
+>>>>>>> wyy1
             <span>退出登录</span>
           </div>
         </SettingContainer>
       </div>
     )
   }
+<<<<<<< HEAD
+=======
+  exit = () => {
+    localStorage.removeItem('user')
+    this.props.history.push('/login')
+  }
+>>>>>>> wyy1
 }
