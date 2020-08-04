@@ -61,31 +61,33 @@ export default class HotConcer extends Component {
       },
     });
 
-    // 儿童剧
-    new Swiper(this.refs.swiper3, {
-      direction: "horizontal", //横向轮播
-      loop: false,
-      grabCursor: true,
-      slidesPerView: 4,
-      spaceBetween: 10,
-    });
-  }
-  componentDidMount() {
-    // 热门演出
-    show().then(({ data }) => {
-      this.setState({
-        shows: data,
-      });
-    });
-    // 演唱会
-    singsong().then(({ data }) => {
-      this.setState({
-        singsongs: data,
-      });
-    });
-    // 演唱会上部
-    singsongtop().then(({ data }) => {
-      console.log(data);
+        // 儿童剧
+        new Swiper(this.refs.swiper3, {
+            direction: 'horizontal',//横向轮播
+            loop: false,
+            grabCursor: true,
+            slidesPerView: 4,
+            spaceBetween: 10,
+        })
+    }
+    componentDidMount() {
+        // 热门演出
+        show().then(({ data }) => {
+            console.log(data);
+
+            this.setState({
+                shows: data
+            })
+        })
+        // 演唱会
+        singsong().then(({ data }) => {
+            this.setState({
+                singsongs: data
+            })
+        })
+        // 演唱会上部
+        singsongtop().then(({ data }) => {
+            console.log(data);
 
       this.setState({
         singsongstop: data,
@@ -172,62 +174,44 @@ export default class HotConcer extends Component {
                       <span>{item.city}</span>|<span>{item.theatername}</span>
                     </p>
                   </div>
+                <div className={style.hot}>
+                    <div className={style.title}>
+                        <div className={style.title_l}>
+                            <h2>展览休闲</h2>
+                        </div>
+                        <div className="title-r">
+                            <span> &nbsp;&gt;</span>
+                        </div>
+                    </div>
+                    {/* 展览休闲上部 */}
+                    {
+                      exhibitionstop.length && exhibitionstop.map((item, index) => {
+                        return <div key={index} className={style.singtop1, style.exhibition}>
+                                <div className={style.sing_l}>
+                                    <img src={item.img} alt="" />
+                                </div>
+                                <div className={style.sing_r}>
+                                    <p><span>{item.date}</span><i>{item.week}</i><i>{item.time}</i></p>
+                                    <p>{item.text}</p>
+                                    <p><span>{item.city}</span>|<span>{item.theatername}</span></p>
+                                </div>
+                            </div>
+                        })
+                      }
+                    <div className="swiper-container" ref="swiper2" id={style.swi_container}>
+                        <div className="swiper-wrapper">
+                            {
+                              exhibitions.length && exhibitions.map((item, index) => <div key={index} className="swiper-slide">
+                                    <img src={item.img} alt="" />
+                                    <p>{item.text}</p>
+                                    <p><em>{item.money}</em>起</p>
+                                </div>)
+                            }
+                        </div>
+                    </div>
                 </div>
-              );
-            })}
-          <div
-            className="swiper-container"
-            ref="swiper1"
-            id={style.sw_container}
-          >
-            <div className="swiper-wrapper">
-              {singsongs.length &&
-                singsongs.map((item, index) => (
-                  <div key={index} className="swiper-slide">
-                    <img src={item.img} alt="" />
-                    <p>{item.text}</p>
-                    <p>
-                      <em>{item.money}</em>起
-                    </p>
-                  </div>
-                ))}
-            </div>
-          </div>
-        </div>
-        {/* 展览休闲 */}
-        <div className={style.hot}>
-          <div className={style.title}>
-            <div className={style.title_l}>
-              <h2>展览休闲</h2>
-            </div>
-            <div className="title-r">
-              <span> &nbsp;{">"}</span>
-            </div>
-          </div>
-          {/* 展览休闲上部 */}
-          {exhibitionstop.length &&
-            exhibitionstop.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className={style.singtop1 + " " + style.exhibition}
-                >
-                  <div className={style.sing_l}>
-                    <img src={item.img} alt="" />
-                  </div>
-                  <div className={style.sing_r}>
-                    <p>
-                      <span>{item.date}</span>
-                      <i>{item.week}</i>
-                      <i>{item.time}</i>
-                    </p>
-                    <p>{item.text}</p>
-                    <p>
-                      <span>{item.city}</span>|<span>{item.theatername}</span>
-                    </p>
-                  </div>
-                </div>
-              );
+              </div>
+              )
             })}
           <div
             className="swiper-container"

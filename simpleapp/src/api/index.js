@@ -29,5 +29,9 @@ export async function child() {
 
 // 为你推荐
 export async function recommend() {
-    return await fetchData.get("/recommend");
+    return await fetchData.get("/recommend?_start=0&_limit=10");
 }
+export async function confirm() {
+    return await fetchData.get("/confirm");
+}
+// http://127.0.1.1:8081/live/juooo/getDetailsById?id=1

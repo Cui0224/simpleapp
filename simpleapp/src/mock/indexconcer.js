@@ -38,7 +38,7 @@ module.exports = () => {
             'theatername': '中华世纪坛',
             'img': '/01.jpg',
         }],
-        'recommend|30': [{
+        'recommend|50': [{
             'id|+1': 1,
             'img': '/01.jpg',
             'hold': "true",
@@ -48,6 +48,15 @@ module.exports = () => {
             'city': "广州",
             'tag': ["套票", "电子票", "可选座", "限时8.5折起"],
         }],
+        'confirm': [{
+            'id': 1,
+            'title': '【档期调整】聚橙制作|百老汇爱情音乐轻喜剧《第一次约会》中文版-广州站',
+            'time': '2020.12.23 周三 19:30 ',
+            'place': '广州 | 广东艺术剧院（原广东演艺中心大剧院）',
+            'count': 1,
+            'money': 280,
+            'yunfei': 15,
+        }]
     })
     return data
 }

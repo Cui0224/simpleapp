@@ -6,6 +6,7 @@ import Swiper from "../../component/wyb/Swiper";
 import Typelist from "../../component/wyb/Tpyelist";
 import HomeTop from "../../component/ccy/homeTop";
 export default class Index extends Component {
+<<<<<<< HEAD
   render() {
     return (
       <>
@@ -24,4 +25,20 @@ export default class Index extends Component {
       </>
     );
   }
+=======
+    render() {
+        return (
+            <div className={HomeIndexCss.container}>
+                <div className={HomeIndexCss.swiper}>
+                    <Swiper />
+                    {/* 热门演出、演唱会、展览休闲、儿童剧 */}
+                    <HotConcer></HotConcer>
+                    {/* 为你推荐 */}
+                    <Recommend></Recommend>
+                </div>
+
+            </div>
+        )
+    }
+>>>>>>> jhx
 }

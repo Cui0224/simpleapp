@@ -9,6 +9,10 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.4.3",
     "autoresponsive-react": "^1.1.31",
+<<<<<<< HEAD
+=======
+    "axios": "^0.19.2",
+>>>>>>> jhx
     "better-scroll": "^1.15.2",
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
@@ -24,8 +28,13 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-virtualized": "^9.21.2",
     "redux": "^4.0.5",
+<<<<<<< HEAD
     "styled-components": "^5.1.1",
+=======
+    "reqwest": "^2.0.5",
+>>>>>>> jhx
     "swiper": "^5.4.5"
   },
   "scripts": {
@@ -33,8 +42,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+<<<<<<< HEAD
     "json": "json-server --watch --port 3001 ./src/mock/indexconcer.js",
     "mock": "json-server ./mock/mock.js -p 8008 -r ./mock/route.json"
+=======
+    "json": "json-server --watch --port 3001 ./src/mock/indexconcer.js"
+>>>>>>> jhx
   },
   "eslintConfig": {
     "extends": "react-app"
